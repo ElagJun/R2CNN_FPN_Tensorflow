@@ -127,7 +127,7 @@ F: 0.785888023548
 """
 
 # root path
-ROOT_PATH = os.path.abspath(r'C:\Users\yangxue\Documents\GitHub\R2CNN_FPN_Tensorflow')
+ROOT_PATH = os.path.abspath(r'C:\\Elag\\git\\R2CNN_FPN_Tensorflow')
 
 # pretrain weights path
 TEST_SAVE_PATH = ROOT_PATH + '/tools/test_result'
@@ -145,7 +145,7 @@ ANCHOR_RATIOS = [1 / 3., 1., 3.0]
 SCALE_FACTORS = [10., 10., 5., 5., 5.]
 OUTPUT_STRIDE = 16
 SHORT_SIDE_LEN = 600
-DATASET_NAME = 'ship'
+DATASET_NAME = 'text'
 
 BATCH_SIZE = 1
 WEIGHT_DECAY = {'resnet_v1_50': 0.0001, 'resnet_v1_101': 0.0001}
@@ -168,7 +168,7 @@ RPN_TOP_K_NMS = 3000
 FEATURE_PYRAMID_MODE = 0  # {0: 'feature_pyramid', 1: 'dense_feature_pyramid'}
 
 # fast rcnn
-ROTATE_NMS_USE_GPU = True
+ROTATE_NMS_USE_GPU = False
 FAST_RCNN_MODE = 'build_fast_rcnn1'
 ROI_SIZE = 14
 ROI_POOL_KERNEL_SIZE = 2
